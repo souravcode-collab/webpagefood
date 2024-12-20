@@ -1,0 +1,261 @@
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Navbar</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body{
+        background-color: #79D7BE;
+    }
+    .navbar-red {
+      background-color: red;
+    }
+    .navbar-red .nav-link, 
+    .navbar-red .navbar-brand {
+      color: white;
+    }
+    .navbar-red .nav-link:hover {
+      color: #ffe5e5;
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05); 
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-red">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Foodzone</a>
+      <img src="C:\Users\soura\Downloads\—Pngtree—resturent logo_8310013.png" alt="">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <h1 class="text-center mb-4">Food Menu</h1>
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCKqzrE2hZnTGh65h_SlXd8X8V75HXdXC3Eg&s" class="card-img-top" alt="Pizza">
+          <div class="card-body">
+            <h5 class="card-title">Pizza</h5>
+            <p class="card-text">Delicious cheesy pizza with your favorite toppings.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxZKL7WMikW3J0rlF60zK8CtAXOUgKBDZGPw&s" class="card-img-top" alt="Burger">
+          <div class="card-body">
+            <h5 class="card-title">Burger</h5>
+            <p class="card-text">Juicy grilled burger served with crispy fries.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://c.ndtvimg.com/2023-01/6g5e4tf_white-sauce-pasta_625x300_10_January_23.jpg?im=FeatureCrop,algorithm=dnn,width=345,height=250?downsize=200:155" class="card-img-top" alt="Pasta">
+          <div class="card-body">
+            <h5 class="card-title">Pasta</h5>
+            <p class="card-text">Creamy pasta with a rich and flavorful sauce.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwnd6kBugw_EBq-vn1ES4USgbrNhWa35VvcA&s" class="card-img-top" alt="Salad">
+          <div class="card-body">
+            <h5 class="card-title">Salad</h5>
+            <p class="card-text">Fresh and healthy salad with seasonal ingredients.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/497022342/photo/japanese-restaurant-sushi-dish.jpg?s=612x612&w=0&k=20&c=kiFHr2Y_WReN_AqwQExCe5acickkBHhImEtFi59CyMQ=" class="card-img-top" alt="Sushi">
+          <div class="card-body">
+            <h5 class="card-title">Sushi</h5>
+            <p class="card-text">Authentic sushi rolls made with fresh fish and rice.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://i0.wp.com/strawberriesforsupper.com/wp-content/uploads/2011/07/Blueberry-Maple-Ice-Cream-1-300x200.jpg?fit=300%2C200&ssl=1" class="card-img-top" alt="Ice Cream">
+          <div class="card-body">
+            <h5 class="card-title">Ice Cream</h5>
+            <p class="card-text">Creamy ice cream with a variety of flavors to choose from.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Give your order here</h1>
+    <form id="orderForm" class="p-4 border rounded">
+    
+      <div class="mb-3">
+        <label for="foodName" class="form-label">Food Name</label>
+        <input 
+          type="text" 
+          class="form-control" 
+          id="foodName" 
+          placeholder="Enter food name" 
+          list="foodSuggestions" 
+          required>
+        <datalist id="foodSuggestions">
+          <option value="Pizza">
+          <option value="Burger">
+          <option value="Pasta">
+          <option value="Salad">
+          <option value="Sushi">
+        </datalist>
+      </div>
+      
+      <div class="mb-3">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" required>
+      </div>
+      
+      <button type="submit" id="orderButton" class="btn btn-primary w-100">Order</button>
+    </form>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("orderForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      const foodName = document.getElementById("foodName").value.trim();
+      const quantity = document.getElementById("quantity").value.trim();
+
+      if (foodName && quantity) {
+        const orderButton = document.getElementById("orderButton");
+        orderButton.textContent = "Order Placed";
+        orderButton.classList.remove("btn-primary");
+        orderButton.classList.add("btn-success");
+        orderButton.disabled = true; 
+      }
+    });
+  </script>
+ <div class="container my-5">
+    <h1 class="text-center mb-4">What We Offer</h1>
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <img src="https://www.nicepng.com/png/detail/428-4283860_home-delivery-food-delivery.png" class="card-img-top" alt="Our Services">
+          <div class="card-body">
+            <h5 class="card-title">Our Services</h5>
+            <p class="card-text">We provide top-notch services to ensure your satisfaction and comfort.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <img src="https://i.pinimg.com/474x/4d/15/e2/4d15e2a9f8d290025cbbefb78b264163.jpg" class="card-img-top" alt="Our Ambience">
+          <div class="card-body">
+            <h5 class="card-title">Our Ambience</h5>
+            <p class="card-text">Enjoy a serene and aesthetically pleasing environment.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <img src="https://static.vecteezy.com/system/resources/previews/022/141/683/non_2x/online-money-back-concept-or-money-back-concept-happy-people-receive-cashback-for-shopping-big-phone-with-cashback-start-button-save-money-get-vouchers-and-discounts-rewards-program-vector.jpg" class="card-img-top" alt="Our Facilities">
+          <div class="card-body">
+            <h5 class="card-title">Our Facilities</h5>
+            <p class="card-text">Order from us and get amazing cash backs and cupons and discounts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-4 mb-3">
+          <h5>About Us</h5>
+          <p>
+            We provide the finest quality food and services to make your dining experience delightful. 
+            Fresh ingredients and passion are at the heart of everything we serve.
+          </p>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#menu" class="text-white text-decoration-none">Menu</a></li>
+            <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+            <li><a href="#services" class="text-white text-decoration-none">Services</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+          <h5>Contact Us</h5>
+          <p>
+            <i class="bi bi-telephone-fill"></i> +123 456 7890 <br>
+            <i class="bi bi-envelope-fill"></i> info@foodwebsite.com
+          </p>
+          <h6>Follow Us</h6>
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <div class="text-center">
+        <p class="mb-0">© 2024 Food Website. All rights reserved.</p>
+      </div>
+    </div>
+  
+    
+  </footer>
+  
+
+</body>
+</html>
+
